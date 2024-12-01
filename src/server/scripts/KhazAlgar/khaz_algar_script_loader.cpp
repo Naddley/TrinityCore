@@ -16,6 +16,10 @@
  */
 
 // This is where scripts' loading functions should be declared:
+
+// Zone Azj-Kahet
+void AddSC_worldboss_orta();
+
 // Nerub'ar Palace
 void AddSC_instance_nerubar_palace();
 void AddSC_boss_ulgrax_the_devourer();
@@ -24,6 +28,9 @@ void AddSC_boss_ulgrax_the_devourer();
 // void Add${NameOfDirectory}Scripts()
 void AddKhazAlgarScripts()
 {
+    // Zone Azj-Kahet
+    AddSC_worldboss_orta();
+
     // Nerub'ar Palace
     AddSC_instance_nerubar_palace();
     AddSC_boss_ulgrax_the_devourer();
