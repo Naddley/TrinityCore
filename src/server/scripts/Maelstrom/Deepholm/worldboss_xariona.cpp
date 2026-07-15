@@ -54,7 +54,6 @@ struct npc_deepholm_worldboss_xariona : public ScriptedAI
 
     void JustAppeared() override
     {
-        me->SetMaxPower(POWER_ENERGY, 100);
         DoCastSelf(Spells::ZeroPower);
         DoCastSelf(Spells::RogueClassCritDodgeDebuff);
     }
