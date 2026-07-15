@@ -17,7 +17,10 @@
 
 // This is where scripts' loading functions should be declared:
 void AddSC_kezan();
+
+// Deepholm
 void AddSC_deepholm();
+void AddSC_worldboss_xariona();
 void AddSC_instance_stonecore(); // Stonecore
 void AddSC_stonecore();
 void AddSC_boss_corborus();
@@ -30,7 +33,10 @@ void AddSC_boss_high_priestess_azil();
 void AddMaelstromScripts()
 {
     AddSC_kezan();
+
+    // Deepholm
     AddSC_deepholm();
+    AddSC_worldboss_xariona();
     AddSC_instance_stonecore(); // Stonecore
     AddSC_stonecore();
     AddSC_boss_corborus();

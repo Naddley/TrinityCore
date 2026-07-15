@@ -4524,6 +4524,21 @@ void SpellMgr::LoadSpellInfoCorrections()
     });
 
     //
+    // DEEPHOLM SPELLS
+    //
+
+    // Zero Power
+    ApplySpellFix({ 87239 }, [](SpellInfo* spellInfo)
+    {
+        ApplySpellEffectFix(spellInfo, EFFECT_1, [](SpellEffectInfo* spellEffectInfo)
+        {
+                spellEffectInfo->MiscValue = 3;
+        });
+    });
+
+    // ENDOF DEEPHOLM SPELLS
+
+    //
     // STONECORE SPELLS
     //
     ApplySpellFix({
