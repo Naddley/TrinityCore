@@ -58,9 +58,14 @@ struct npc_deepholm_worldboss_xariona : public ScriptedAI
         DoCastSelf(Spells::RogueClassCritDodgeDebuff);
     }
 
-    void JustEngagedWith(Unit* /*who*/) override
+    void JustEnteredCombat(Unit* /*who*/) override
     {
         me->SetHomePosition(me->GetPosition());
+    }
+
+    void JustEngagedWith(Unit* /*who*/) override
+    {
+        // me->SetHomePosition(me->GetPosition());
         
         _events.ScheduleEvent(Events::EventFuryOfTheTwilightFlight, 1s);
         _events.ScheduleEvent(Events::EventTwilightBreath, 14s);
